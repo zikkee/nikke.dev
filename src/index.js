@@ -13,16 +13,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <div className="h-screen bg-black">
+      <div className="h-screen bg-black flex flex-col justify-between">
         <Navbar />
-        <div className="m-auto max-w-5xl mt-5">
+        <div className="mb-auto mt-5">
           <Routes>
             <Route path="/" element={<Etusivu />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-          </div>
+        </div>
           <Footer />
       </div>
     </Router>
