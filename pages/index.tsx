@@ -1,12 +1,12 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
 
-const Etusivu = () => {
+const Home = () => {
   return (
     <div>
-        <Helmet>
+        <Head>
             <title>Home | NikkeDev</title>
-        </Helmet>
+        </Head>
         <div className="flex items-center justify-center mt-[25vh] text-center">
           <div>
             <h1 className="text-5xl font-bold text-sky-600 md:text-7xl pb-2">NikkeDev</h1>
@@ -17,4 +17,4 @@ const Etusivu = () => {
   );
 }
 
-export default Etusivu;
+export default Home;

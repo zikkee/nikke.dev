@@ -1,12 +1,12 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
 
 const About = () => {
   return (
     <div>
-        <Helmet>
+        <Head>
             <title>About | NikkeDev</title>
-        </Helmet>
+        </Head>
         <div className="max-w-[800px] m-auto pt-1">
             <h1 className="text-5xl font-bold text-sky-600 md:text-6xl pb-2 m-4">About me</h1>
             <p className="text-white text-lg m-4">

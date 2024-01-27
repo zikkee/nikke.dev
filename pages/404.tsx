@@ -1,13 +1,12 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
 
-const NotFound = () => {
+export default function Custom404() {
   return (
     <div>
-        <Helmet>
+        <Head>
             <title>Page not found | Testi</title>
-        </Helmet>
-        <div className="m-3">
+        </Head>
+        <div className="max-w-[800px] m-auto pt-1">
           <h1 className="text-3xl font-bold text-white mb-4">
               404 - Page not found
           </h1>
@@ -15,6 +14,4 @@ const NotFound = () => {
         </div>
     </div>
   );
-}
-
-export default NotFound;
+  }
